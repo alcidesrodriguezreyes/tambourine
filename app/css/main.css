@@ -1,6 +1,34 @@
+@font-face {
+  font-family: 'bodonixtregular';
+  src: url("../fonts/bodoni-webfont.eot");
+  src: url("../fonts/bodoni-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bodoni-webfont.woff2") format("woff2"), url("../fonts/bodoni-webfont.woff") format("woff"), url("../fonts/bodoni-webfont.ttf") format("truetype"), url("../fonts/bodoni-webfont.svg#bodonixtregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gotham_boldregular';
+  src: url("../fonts/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff"), url("../fonts/gotham-bold-webfont.ttf") format("truetype"), url("../fonts/gotham-bold-webfont.svg#gotham_boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gotham_mediumregular';
+  src: url("../fonts/gotham-medium-webfont.eot");
+  src: url("../fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham-medium-webfont.woff2") format("woff2"), url("../fonts/gotham-medium-webfont.woff") format("woff"), url("../fonts/gotham-medium-webfont.ttf") format("truetype"), url("../fonts/gotham-medium-webfont.svg#gotham_mediumregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background: url(../temp_images/LandingPage.jpg) no-repeat top center;
-  color: black; }
+  color: black;
+  background-color: black;
+  height: 1889px;
+  background-size: contain; }
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto; }
 
 .banner {
   height: 787px;
@@ -10,17 +38,19 @@ header {
   background-color: white;
   height: 104px;
   position: absolute;
-  width: 1077px;
+  width: 80%;
   margin: 0 auto;
-  left: 111px;
-  top: 94px; }
+  left: 10%;
+  top: 94px;
+  opacity: 0.9; }
 
 .city {
   float: left;
   height: 100%;
   line-height: 104px;
   padding-left: 60px;
-  font-size: 12px; }
+  font-size: 11pt;
+  font-family: "gotham_mediumregular"; }
 
 .logo-container {
   position: absolute;
@@ -29,9 +59,53 @@ header {
   text-align: center;
   top: -47%; }
 
+@media (min-width: 1680px) {
+  header {
+    width: 64%;
+    left: 18%; } }
+
 #footer {
   background-color: gray; }
 
-.banner {
+.banner-slider {
   height: 787px;
-  position: relative; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.slider-item {
+  height: 787px; }
+
+.slick-arrow {
+  z-index: 5;
+  width: 30px;
+  height: 58px;
+  margin-top: 0; }
+
+.slick-prev {
+  left: 5%;
+  top: 45%; }
+  .slick-prev:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/slider-arrows.png) no-repeat top left; }
+
+.slick-next {
+  right: 5%;
+  top: 45%; }
+  .slick-next:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/slider-arrows.png) no-repeat top right; }
+
+/*
+@media (min-width: 1680px){
+    .slick-prev{
+        left: 5%;
+    }
+}
+*/

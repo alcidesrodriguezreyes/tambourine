@@ -1,19 +1,28 @@
 body{
     background: url(../temp_images/LandingPage.jpg) no-repeat top center;
     color: black;
+    background-color: $body-background-color;
+    height: 1889px;
+    background-size: contain;
+}
+.container{
+    max-width: $container-max-width;
+    margin: 0 auto;
 }
 .banner{
     height: 787px;
     position: relative;
 }
+//header
 header{
     background-color: white;
     height: 104px;
     position: absolute;
-    width: 1077px;
+    width: 80%;
     margin: 0 auto;
-    left: 111px;
+    left: 10%;
     top: 94px;
+    opacity: 0.9;
 }
 .city{
     float: left;
@@ -21,6 +30,7 @@ header{
     line-height: $header-height;
     padding-left: 60px;
     font-size: $header-font-size;
+    font-family: $header-font;
     
 }
 .logo-container{
@@ -30,3 +40,11 @@ header{
     text-align: center;
     top: -47%;
 }
+
+@media (min-width: 1680px){
+    header{
+        width: 64%;
+        left: 18%;
+    }
+}
+//end header

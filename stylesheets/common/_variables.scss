@@ -2,7 +2,13 @@ $body-background-color: black;
 $footer-background-color: gray;
 $color: gray;
 
+$container-max-width: 1680px;
+
 
 //header
-$header-font-size: 12px;
+$header-font-size: 11pt;
 $header-height: 104px;
+$header-font: 'gotham_mediumregular';
+
+//banner
+$banner-height: 787px;
