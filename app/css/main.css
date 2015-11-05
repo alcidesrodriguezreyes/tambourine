@@ -1,5 +1,37 @@
 body {
-  color: gray; }
+  background: url(../temp_images/LandingPage.jpg) no-repeat top center;
+  color: black; }
+
+.banner {
+  height: 787px;
+  position: relative; }
+
+header {
+  background-color: white;
+  height: 104px;
+  position: absolute;
+  width: 1077px;
+  margin: 0 auto;
+  left: 111px;
+  top: 94px; }
+
+.city {
+  float: left;
+  height: 100%;
+  line-height: 104px;
+  padding-left: 60px;
+  font-size: 12px; }
+
+.logo-container {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  text-align: center;
+  top: -47%; }
 
 #footer {
   background-color: gray; }
+
+.banner {
+  height: 787px;
+  position: relative; }

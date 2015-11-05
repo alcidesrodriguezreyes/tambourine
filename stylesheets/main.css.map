@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "main.css",
+  "sources": [
+    "main.scss",
+    "common/_variables.scss",
+    "common/_common.scss",
+    "common/_footer.scss",
+    "modules/_banner-slider.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AEAA,IAAI,CAAA;EACA,UAAU,EAAE,mCAAG,CAAiC,SAAS,CAAC,GAAG,CAAC,MAAM;EACpE,KAAK,EAAE,KAAM,GAFZ;;;AAIL,MAAM,CAAA;EACF,gBAAgB,EAAE,KAAM;EACxB,MAAM,EAAE,KAAM;EACd,QAAQ,EAAE,QAAS;EACnB,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,MAAO;EACf,IAAI,EAAE,EAAG,GANN;;;AAQP,KAAK,CAAA;EACD,KAAK,EAAE,IAAK,GADV;;;AAGN,eAAe,CAAA;EACX,QAAQ,EAAE,QAAS;EACnB,IAAI,EAAE,GAAI;EACV,KAAK,EAAE,GAAI;EACX,UAAU,EAAE,MAAO;EACnB,GAAG,EAAE,IAAK,GALE;;;ACfhB,OAAO,CAAA;EACH,gBAAgB,EFAM,IAAI,GEDtB;;;ACAR,cAAc,CAAA;EACV,MAAM,EAAE,KAAM;EACd,QAAQ,EAAE,QAAS,GAFR",
+  "names": []
+}

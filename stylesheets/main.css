@@ -1,0 +1,36 @@
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+body {
+  background: url(../temp_images/LandingPage.jpg) no-repeat top center;
+  color: black; }
+
+/* line 5, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+header {
+  background-color: white;
+  height: 105px;
+  position: absolute;
+  width: 82%;
+  margin: 0 auto;
+  left: 9%; }
+
+/* line 13, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.city {
+  float: left; }
+
+/* line 16, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.logo-container {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  text-align: center;
+  top: -47%; }
+
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+#footer {
+  background-color: gray; }
+
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.banner-slider {
+  height: 787px;
+  position: relative; }
+
+/*# sourceMappingURL=main.css.map */
