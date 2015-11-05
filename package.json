@@ -1,0 +1,19 @@
+{
+  "name": "tambourine",
+  "version": "1.0.0",
+  "description": "Tambourine test for front end developers",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcidesrodriguezreyes/tambourine.git"
+  },
+  "author": "Alcides Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alcidesrodriguezreyes/tambourine/issues"
+  },
+  "homepage": "https://github.com/alcidesrodriguezreyes/tambourine#readme"
+}
