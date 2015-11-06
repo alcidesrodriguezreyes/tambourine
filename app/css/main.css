@@ -19,6 +19,9 @@
   font-weight: normal;
   font-style: normal; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: url(../temp_images/LandingPage.jpg) no-repeat top center;
   color: black;
@@ -28,6 +31,10 @@ body {
 
 .container {
   max-width: 1680px;
+  margin: 0 auto; }
+
+.wrapper {
+  width: 80%;
   margin: 0 auto; }
 
 .banner {
@@ -62,10 +69,29 @@ header {
 @media (min-width: 1680px) {
   header {
     width: 64%;
-    left: 18%; } }
+    left: 18%; }
+  .wrapper {
+    width: 64%; } }
 
-#footer {
-  background-color: gray; }
+footer {
+  background-color: #f1f2f2;
+  height: 43px; }
+
+.copyrights {
+  list-style: none;
+  padding: 0 50px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 0; }
+
+.rights, .contact-info {
+  display: inline-block;
+  width: 50%;
+  font-size: 12px;
+  font-family: 'gotham_mediumregular'; }
+
+.contact-info {
+  text-align: right; }
 
 .banner-slider {
   height: 787px;

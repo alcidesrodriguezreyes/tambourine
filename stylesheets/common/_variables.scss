@@ -1,8 +1,10 @@
 $body-background-color: black;
-$footer-background-color: gray;
+
 $color: gray;
 
 $container-max-width: 1680px;
+$wrapper-width: 80%;
+$wapper-width-large: 64%;
 
 
 //header
@@ -12,3 +14,7 @@ $header-font: 'gotham_mediumregular';
 
 //banner
 $banner-height: 787px;
+
+//footer
+$footer-background-color: #f1f2f2;
+$footer-height: 43px;

@@ -1,54 +1,72 @@
 @font-face {
   font-family: 'bodonixtregular';
-  src: url("../bodoni-webfont.eot");
-  src: url("../bodoni-webfont.eot?#iefix") format("embedded-opentype"), url("../bodoni-webfont.woff2") format("woff2"), url("../bodoni-webfont.woff") format("woff"), url("../bodoni-webfont.ttf") format("truetype"), url("../bodoni-webfont.svg#bodonixtregular") format("svg");
+  src: url("../fonts/bodoni-webfont.eot");
+  src: url("../fonts/bodoni-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bodoni-webfont.woff2") format("woff2"), url("../fonts/bodoni-webfont.woff") format("woff"), url("../fonts/bodoni-webfont.ttf") format("truetype"), url("../fonts/bodoni-webfont.svg#bodonixtregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gotham_boldregular';
-  src: url("../gotham-bold-webfont.eot");
-  src: url("../gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../gotham-bold-webfont.woff2") format("woff2"), url("../gotham-bold-webfont.woff") format("woff"), url("../gotham-bold-webfont.ttf") format("truetype"), url("../gotham-bold-webfont.svg#gotham_boldregular") format("svg");
+  src: url("../fonts/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff"), url("../fonts/gotham-bold-webfont.ttf") format("truetype"), url("../fonts/gotham-bold-webfont.svg#gotham_boldregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gotham_mediumregular';
-  src: url("../gotham-medium-webfont.eot");
-  src: url("../gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../gotham-medium-webfont.woff2") format("woff2"), url("../gotham-medium-webfont.woff") format("woff"), url("../gotham-medium-webfont.ttf") format("truetype"), url("../gotham-medium-webfont.svg#gotham_mediumregular") format("svg");
+  src: url("../fonts/gotham-medium-webfont.eot");
+  src: url("../fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham-medium-webfont.woff2") format("woff2"), url("../fonts/gotham-medium-webfont.woff") format("woff"), url("../fonts/gotham-medium-webfont.ttf") format("truetype"), url("../fonts/gotham-medium-webfont.svg#gotham_mediumregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 4, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 body {
   background: url(../temp_images/LandingPage.jpg) no-repeat top center;
-  color: black; }
+  color: black;
+  background-color: black;
+  height: 1889px;
+  background-size: contain; }
 
-/* line 5, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 11, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.container {
+  max-width: 1680px;
+  margin: 0 auto; }
+
+/* line 15, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .banner {
   height: 787px;
   position: relative; }
 
-/* line 9, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 24, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 header {
   background-color: white;
   height: 104px;
   position: absolute;
-  width: 1077px;
+  width: 80%;
   margin: 0 auto;
-  left: 111px;
+  left: 10%;
   top: 94px;
-  opacity: 0.2; }
+  opacity: 0.9; }
 
-/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 34, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .city {
   float: left;
   height: 100%;
   line-height: 104px;
   padding-left: 60px;
-  font-size: 11px; }
+  font-size: 11pt;
+  font-family: "gotham_mediumregular"; }
 
-/* line 27, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .logo-container {
   position: absolute;
   left: 40%;
@@ -56,8 +74,87 @@ header {
   text-align: center;
   top: -47%; }
 
+@media (min-width: 1680px) {
+  /* line 52, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  header {
+    width: 64%;
+    left: 18%; }
+  /* line 56, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .wrapper {
+    width: 64%; } }
+
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
-#footer {
-  background-color: gray; }
+footer {
+  background-color: #f1f2f2;
+  height: 43px; }
+
+/* line 5, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+.copyrights {
+  list-style: none;
+  padding: 0 50px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 0; }
+
+/* line 12, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+.rights, .contact-info {
+  display: inline-block;
+  width: 50%;
+  font-size: 12px;
+  font-family: 'gotham_mediumregular'; }
+
+/* line 18, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+.contact-info {
+  text-align: right; }
+
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.banner-slider {
+  height: 787px;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 7, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.slider-item {
+  height: 787px; }
+
+/* line 10, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.slick-arrow {
+  z-index: 5;
+  width: 30px;
+  height: 58px;
+  margin-top: 0; }
+
+/* line 16, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.slick-prev {
+  left: 5%;
+  top: 45%; }
+  /* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .slick-prev:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/slider-arrows.png) no-repeat top left; }
+
+/* line 27, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+.slick-next {
+  right: 5%;
+  top: 45%; }
+  /* line 30, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .slick-next:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/slider-arrows.png) no-repeat top right; }
+
+/*
+@media (min-width: 1680px){
+    .slick-prev{
+        left: 5%;
+    }
+}
+*/
 
 /*# sourceMappingURL=main.css.map */

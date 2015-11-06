@@ -1,3 +1,20 @@
-#footer{
+footer{
     background-color: $footer-background-color;
+    height: $footer-height;
+}
+.copyrights{
+    list-style: none;
+    padding: 0 50px;
+    height: $footer-height;
+    line-height: $footer-height;
+    font-size: 0; //fix inline-block
+}
+.rights, .contact-info{
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    font-family: 'gotham_mediumregular';
+}
+.contact-info{
+    text-align: right;
 }
