@@ -1,0 +1,40 @@
+.headline{
+    background: black;
+    height: 214px;
+    position: relative;
+    text-align: center;
+}
+.headline-content{
+    position: relative;
+    top: -172px;
+    background: black;
+    &:before{
+        content: "";
+        width: 558px;
+        height: 5px;
+        background: white;
+        margin: 0 auto;
+        display: block;
+    }
+    .title{
+        color: white;
+        margin: 35px 0 0;
+        font-family: 'bodonixtregular';
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .subtitle{
+        color: white;
+        margin: 0;
+        font-family: 'bodonixtregular';
+        font-weight: normal;
+        font-style: italic;
+        font-size: 28px;
+    }
+    .intro{
+        font-family: arial;
+        color: white;
+        padding: 0 140px;
+        margin: 40px 0;
+    }
+}

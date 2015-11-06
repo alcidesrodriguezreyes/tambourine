@@ -149,12 +149,23 @@ footer {
     display: block;
     background: url(../images/slider-arrows.png) no-repeat top right; }
 
-/*
-@media (min-width: 1680px){
-    .slick-prev{
-        left: 5%;
-    }
-}
-*/
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+.headline {
+  background: black;
+  height: 214px;
+  position: relative;
+  text-align: center; }
+  /* line 6, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  .headline .title {
+    color: white; }
+
+/* line 11, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+.headline-content:before {
+  content: "";
+  width: 558px;
+  height: 5px;
+  background: white;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

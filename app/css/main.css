@@ -128,10 +128,38 @@ footer {
     display: block;
     background: url(../images/slider-arrows.png) no-repeat top right; }
 
-/*
-@media (min-width: 1680px){
-    .slick-prev{
-        left: 5%;
-    }
-}
-*/
+.headline {
+  background: black;
+  height: 214px;
+  position: relative;
+  text-align: center; }
+
+.headline-content {
+  position: relative;
+  top: -172px;
+  background: black; }
+  .headline-content:before {
+    content: "";
+    width: 558px;
+    height: 5px;
+    background: white;
+    margin: 0 auto;
+    display: block; }
+  .headline-content .title {
+    color: white;
+    margin: 35px 0 0;
+    font-family: 'bodonixtregular';
+    font-size: 40px;
+    font-weight: normal; }
+  .headline-content .subtitle {
+    color: white;
+    margin: 0;
+    font-family: 'bodonixtregular';
+    font-weight: normal;
+    font-style: italic;
+    font-size: 28px; }
+  .headline-content .intro {
+    font-family: arial;
+    color: white;
+    padding: 0 140px;
+    margin: 40px 0; }
