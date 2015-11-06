@@ -42,3 +42,29 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'interstateregular';
+    src: url('../fonts/interstateblackcondensed-webfont.eot');
+    src: url('../fonts/interstateblackcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/interstateblackcondensed-webfont.woff2') format('woff2'),
+         url('../fonts/interstateblackcondensed-webfont.woff') format('woff'),
+         url('../fonts/interstateblackcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/interstateblackcondensed-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interstatelightregular';
+    src: url('../fonts/interstate-extralight_24128-webfont.eot');
+    src: url('../fonts/interstate-extralight_24128-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/interstate-extralight_24128-webfont.woff2') format('woff2'),
+         url('../fonts/interstate-extralight_24128-webfont.woff') format('woff'),
+         url('../fonts/interstate-extralight_24128-webfont.ttf') format('truetype'),
+         url('../fonts/interstate-extralight_24128-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

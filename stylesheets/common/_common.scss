@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
 }
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
 body{
     background: url(../temp_images/LandingPage.jpg) no-repeat top center;
     color: black;

@@ -1,0 +1,56 @@
+$article-height: 66px;
+.article{
+    padding-top: $article-height;
+    background-color: #f1f2f2;
+}
+
+
+.article-info{
+    float: left;
+    width: 400px;
+    height: $article-height;
+    position: relative;
+}
+.article-image{
+    float: right;
+}
+.article-category{
+    text-align: center;
+    display: block;
+    font-family: 'interstatelightregular';
+    font-size: 14px;
+    margin-top: 12px;
+}
+.article-title{
+    font-family: 'gotham_boldregular';
+    color: #979fa4;
+    font-size: 37px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 17px;
+}
+
+.article-excerpt{
+    color: #282930;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+
+.button-cta{
+    border: 2px solid red;
+    border-radius: 3px;
+    color: #e21f25;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'interstateregular';
+}
+.article-cta{
+    position: absolute;
+    bottom: 0;
+}
