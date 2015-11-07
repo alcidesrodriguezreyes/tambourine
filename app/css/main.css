@@ -45,7 +45,6 @@
   clear: both; }
 
 body {
-  background: url(../temp_images/LandingPage.jpg) no-repeat top center;
   color: black;
   background-color: black;
   background-size: contain; }
@@ -86,6 +85,41 @@ header {
   width: 20%;
   text-align: center;
   top: -47%; }
+
+.button-cta {
+  border: 2px solid red;
+  border-radius: 3px;
+  color: #e21f25;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'interstateregular';
+  transition: all .2s ease-in-out; }
+  .button-cta:hover {
+    background-color: #e21f25;
+    color: white;
+    opacity: .8; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #676b67;
+  opacity: 0;
+  transition: opacity .3s ease-in; }
+  .overlay.open {
+    opacity: .75;
+    z-index: 998; }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 420px; } }
 
 @media (min-width: 1680px) {
   header {
@@ -132,7 +166,7 @@ footer {
 .rights, .contact-info {
   display: inline-block;
   width: 50%;
-  font-size: 12px;
+  font-size: 11px;
   font-family: 'gotham_mediumregular'; }
 
 .contact-info {
@@ -201,6 +235,12 @@ footer {
     display: block;
     background: url(../images/slider-arrows.png) no-repeat top right; }
 
+@media (max-width: 768px) {
+  .banner-slider {
+    height: 420px; }
+  .slider-item {
+    height: 420px; } }
+
 @media (max-width: 640px) {
   .banner-slider {
     height: 320px; }
@@ -244,6 +284,21 @@ footer {
     margin: 40px 0;
     line-height: 1.5;
     font-size: 14px; }
+
+@media (max-width: 768px) {
+  .headline {
+    height: auto; }
+  .headline-content {
+    top: 0; }
+    .headline-content:before {
+      width: 200px; }
+    .headline-content .title {
+      font-size: 24px; }
+    .headline-content .subtitle {
+      font-size: 16px; }
+    .headline-content .intro {
+      padding: 0 10px;
+      text-align: justify; } }
 
 @media (max-width: 640px) {
   .headline {
@@ -327,7 +382,10 @@ footer {
   position: relative; }
 
 .article-image {
-  float: right; }
+  float: right;
+  width: 550px; }
+  .article-image img {
+    width: 100%; }
 
 .article-category {
   text-align: center;
@@ -350,22 +408,6 @@ footer {
   font-size: 15px;
   line-height: 1.5; }
 
-.button-cta {
-  border: 2px solid red;
-  border-radius: 3px;
-  color: #e21f25;
-  background: none;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-  font-size: 17px;
-  font-family: 'interstateregular'; }
-  .button-cta:hover {
-    background-color: #e21f25;
-    color: white;
-    opacity: .8; }
-
 .article-cta {
   position: absolute;
   bottom: 0;
@@ -373,7 +415,13 @@ footer {
   width: 100%;
   text-align: center; }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
+  .article-image {
+    width: 500px; }
+    .article-image img {
+      width: 100%; } }
+
+@media (max-width: 768px) {
   .article {
     padding: 20px 0;
     height: auto; }
@@ -391,11 +439,118 @@ footer {
   .article-cta {
     position: static;
     margin-top: 20px; }
-  .article-image img {
-    width: 100%; } }
-
-@media (max-width: 1024px) {
   .article-image {
-    width: 500px; }
+    width: 100%; }
     .article-image img {
       width: 100%; } }
+
+@media (min-width: 1300px) {
+  .article-image {
+    width: 620px; }
+    .article-image img {
+      width: 100%; } }
+
+.book-now {
+  position: absolute;
+  left: -29px;
+  top: 320px;
+  transform: rotate(-90deg);
+  transform-origin: top left; }
+
+.book-now-button {
+  background-color: black;
+  width: 40px;
+  padding: 13px;
+  color: white;
+  font-size: 13px;
+  font-family: "gotham_mediumregular", Arial, sans-serif;
+  text-decoration: none; }
+
+.book-now-form {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  width: 330px;
+  height: auto;
+  padding-top: 60px;
+  background-color: black;
+  color: #f1f2f2;
+  transform: translateX(100%);
+  transition: transform .2s ease-in-out; }
+  .book-now-form.open {
+    transform: translateX(0px); }
+  .book-now-form .close {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon-close.png) no-repeat center center;
+    position: absolute;
+    top: 31px;
+    left: 21px; }
+  .book-now-form form {
+    width: 230px;
+    margin: 0 auto; }
+  .book-now-form fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding: 0; }
+  .book-now-form label {
+    font-size: 14px;
+    font-family: "gotham_mediumregular", Arial, sans-serif;
+    display: block;
+    margin-bottom: 12px; }
+  .book-now-form input {
+    height: 37px;
+    width: 223px;
+    background-color: white;
+    border: 1px solid #696969;
+    color: #a3aaae;
+    font-family: "interstateregular", Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 12px;
+    font-size: 14px; }
+  .book-now-form .selectric-wrapper {
+    width: 99px;
+    display: inline-block;
+    float: left;
+    font-family: "interstateregular", Arial, sans-serif; }
+    .book-now-form .selectric-wrapper:last-child {
+      float: right; }
+    .book-now-form .selectric-wrapper .selectric {
+      background-color: white; }
+      .book-now-form .selectric-wrapper .selectric .label {
+        color: #a3aaae;
+        font-size: 14px; }
+      .book-now-form .selectric-wrapper .selectric .button:after {
+        background: url(../images/icon-chevron-down.png);
+        width: 12px;
+        height: 7px;
+        border: none; }
+    .book-now-form .selectric-wrapper .selectric-items li {
+      background-color: white; }
+  .book-now-form .legend {
+    font-family: "gotham_mediumregular", Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #979fa4; }
+  .book-now-form .btn-container {
+    text-align: center;
+    margin: 30px 0; }
+  .book-now-form .link {
+    text-decoration: none;
+    color: #979fa4;
+    font-size: 14px;
+    font-family: "gotham_mediumregular", Arial, sans-serif; }
+
+.book-now-title {
+  text-align: center;
+  color: white; }
+
+.date-input {
+  background: url(../images/icon-calendar.png) no-repeat center right 18px; }
+
+@media (max-width: 640px) {
+  .book-now-form.open {
+    overflow-y: scroll;
+    height: 100vh; } }

@@ -12,6 +12,9 @@
         <!-- slider -->
         <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="js/vendor/jquery.datepick/jquery.datepick.css" />
+        <link rel="stylesheet" type="text/css" href="js/vendor/jquery.selectric/jquery.selectric.css" />
+        <link rel="stylesheet" type="text/css" href="js/vendor/jquery.validationEngine/jquery.validationEngine.css" />
         
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         
@@ -114,10 +117,65 @@
         
         
         
+        <aside class="book-now-form">
+            <div class="book-now">
+                <a href="#" class="book-now-button" data-toggle="book-now" data-target=".book-now-form">BOOK NOW</a>
+            </div>
+            
+            <form id="book-form">
+                <h1 class="book-now-title">BOOK NOW</h1>
+                
+                <fieldset>
+                    <label for="arrival-date">ARRIVAL DATE</label>
+                    <input type="text" id="arrival-date" class="date-input validate[required]" />
+                </fieldset>
+                
+                <fieldset>
+                    <label for="departure-date">ARRIVAL DATE</label>
+                    <input type="text" id="departure-date" class="date-input validate[required]" />
+                </fieldset>
+                
+                <fieldset>
+                    <label>GUESTS</label>
+                    <div class="input-group">
+                        <select id="guest-adult">
+                            <option value="1">1 Adult</option>
+                            <option value="1">2 Adult</option>
+                            <option value="1">3 Adult</option>
+                            <option value="1">4 Adult</option>
+                        </select>
+                        <select id="guest-child">
+                            <option value="1">1 Child</option>
+                            <option value="1">2 Child</option>
+                            <option value="1">3 Child</option>
+                            <option value="1">4 Child</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="legend">
+                    GET READY! You are about to 
+                    get our best price. Guaranteed.
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="button-cta">LET'S GO</button>
+                </div>
+                
+                <div class="btn-container">
+                    <a href="#" class="link">OR, BOOK YOUR GROUP →</a>
+                </div>
+            </form>
+            <a class="close" href="#" data-toggle="book-now" data-target=".book-now-form"></a>
+        </aside>
         
+        <div class="overlay" data-toggle="book-now" data-target=".book-now-form"></div>
         <!-- scripts -->
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/jquery.datepick/jquery.plugin.js"></script>
+        <script src="js/vendor/jquery.datepick/jquery.datepick.min.js"></script>
+        <script src="js/vendor/jquery.selectric/jquery.selectric.min.js"></script>
+        <script src="js/vendor/jquery.validationEngine/jquery.validationEngine-en.js"></script>
+        <script src="js/vendor/jquery.validationEngine/jquery.validationEngine.js"></script>
         <script src="js/app/app.js"></script>
     </body>
 </html>

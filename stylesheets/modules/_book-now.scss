@@ -1,0 +1,124 @@
+.book-now{
+    position: absolute;
+    left: -29px;
+    top: 320px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+.book-now-button{
+    background-color: black;
+    width: 40px;
+    padding: 13px;
+    color: white;
+    font-size: 13px;
+    font-family: $font-gotham-bold;
+    text-decoration: none;
+}
+.book-now-form{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 330px;
+    height: auto;
+    padding-top: 60px;
+    background-color: black;
+    color: #f1f2f2;
+    transform: translateX(100%);
+    transition: transform .2s ease-in-out;
+    &.open{
+        transform: translateX(0px);
+    }
+    .close{
+        display: block;
+        width: 13px;
+        height: 13px;
+        background: url(../images/icon-close.png) no-repeat center center;
+        position: absolute;
+        top: 31px;
+        left: 21px;
+    }
+    form{
+        width: 230px;
+        margin: 0 auto;
+    }
+    fieldset{
+        border: none;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    label{
+        font-size: 14px;
+        font-family: $font-gotham-medium;
+        display: block;
+        margin-bottom: 12px;
+    }
+    input{
+        height: 37px;
+        width: 223px;
+        background-color: white;
+        border: 1px solid #696969;
+        color: #a3aaae;
+        font-family: $font-interstate;
+        font-weight: normal;
+        padding: 0 12px;
+        font-size: 14px;
+    }
+    .selectric-wrapper{
+        width: 99px;
+        display: inline-block;
+        float: left;
+        font-family: $font-interstate;
+        &:last-child{
+            float: right;
+        }
+        .selectric {
+            background-color: white;
+            .label{
+                color: #a3aaae;
+                font-size: 14px;
+            }
+            .button:after{
+                background: url(../images/icon-chevron-down.png);
+                width: 12px;
+                height: 7px;
+                border: none;
+            }
+        }
+        .selectric-items li{
+            background-color: white;
+        }
+    }
+    .legend{
+        font-family: $font-gotham-medium;
+        font-size: 14px;
+        text-align: center;
+        color: #979fa4;
+    }
+    .btn-container{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .link{
+        text-decoration: none;
+        color: #979fa4;
+        font-size: 14px;
+        font-family: $font-gotham-medium;
+    }
+    
+}
+.book-now-title{
+    text-align: center;
+    color: white;
+}
+.date-input{
+    background: url(../images/icon-calendar.png) no-repeat center right 18px;
+}
+@media (max-width: 640px){
+    .book-now-form{
+        &.open{
+            overflow-y: scroll;
+            height: 100vh;
+        }
+    }
+}

@@ -27,4 +27,30 @@
         // instead of a settings object
         ]
     });
+    
+    $('#arrival-date,#departure-date').datepick({ 
+        onSelect: customRange, 
+        //showTrigger: '#calImg'
+    }); 
+     
+    function customRange(dates) { 
+        if (this.id == 'arrival-date') { 
+            $('#departure-date').datepick('option', 'minDate', dates[0] || null); 
+        } 
+        else { 
+            $('#arrival-date').datepick('option', 'maxDate', dates[0] || null); 
+        } 
+    }
+    
+    $('select').selectric({disableOnMobile: false});
+    
+    $('[data-toggle="book-now"]').on('click', function(e){
+        e.preventDefault();
+        var target = $(this).data().target;
+        $(target).toggleClass('open');
+        $('.overlay').toggleClass('open');
+    });
+    
+    $("#book-form").validationEngine({promptPosition: 'bottomLeft'});
+    
 })(jQuery);

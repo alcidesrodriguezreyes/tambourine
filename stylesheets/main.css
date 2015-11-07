@@ -49,7 +49,6 @@
 
 /* line 12, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 body {
-  background: url(../temp_images/LandingPage.jpg) no-repeat top center;
   color: black;
   background-color: black;
   background-size: contain; }
@@ -97,43 +96,83 @@ header {
   text-align: center;
   top: -47%; }
 
+/* line 58, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.button-cta {
+  border: 2px solid red;
+  border-radius: 3px;
+  color: #e21f25;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'interstateregular';
+  transition: all 0.2s ease-in-out; }
+  /* line 70, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .button-cta:hover {
+    background-color: #e21f25;
+    color: white;
+    opacity: .8; }
+
+/* line 77, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #676b67;
+  opacity: 0;
+  transition: opacity 0.3s ease-in; }
+  /* line 87, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .overlay.open {
+    opacity: .75;
+    z-index: 998; }
+
+@media (max-width: 768px) {
+  /* line 94, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .banner {
+    height: 420px; } }
+
 @media (min-width: 1680px) {
-  /* line 59, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 99, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   header {
     width: 64%;
     left: 18%; }
-  /* line 63, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 103, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .wrapper {
     width: 64%; } }
 
 @media (max-width: 640px) {
-  /* line 69, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 109, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   header {
     width: 100%;
     left: 0;
     background-color: transparent; }
-  /* line 74, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 114, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .banner {
     height: 320px; }
-  /* line 77, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 117, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .city {
     display: none; }
-  /* line 80, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 120, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .wrapper {
     width: 100%; }
-  /* line 83, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 123, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .logo-container {
     width: 100%;
     left: 0; }
-  /* line 87, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 127, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .logo {
     width: 30%; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 93, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 133, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .wrapper {
     width: 90%; }
-  /* line 96, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 136, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .logo-container {
     width: 36%;
     left: 32%; } }
@@ -155,7 +194,7 @@ footer {
 .rights, .contact-info {
   display: inline-block;
   width: 50%;
-  font-size: 12px;
+  font-size: 11px;
   font-family: 'gotham_mediumregular'; }
 
 /* line 18, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
@@ -183,17 +222,17 @@ footer {
     text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 44, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  /* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
   footer {
     height: auto; }
-  /* line 47, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  /* line 46, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
   .copyrights {
     height: auto; }
-  /* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  /* line 49, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
   .rights {
     width: 100%;
     text-align: center; }
-  /* line 54, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  /* line 53, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
   .contact-info {
     width: 100%;
     text-align: center; } }
@@ -240,11 +279,19 @@ footer {
     display: block;
     background: url(../images/slider-arrows.png) no-repeat top right; }
 
+@media (max-width: 768px) {
+  /* line 42, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .banner-slider {
+    height: 420px; }
+  /* line 45, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .slider-item {
+    height: 420px; } }
+
 @media (max-width: 640px) {
-  /* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  /* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
   .banner-slider {
     height: 320px; }
-  /* line 46, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  /* line 53, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
   .slider-item {
     height: 320px; } }
 
@@ -292,23 +339,44 @@ footer {
     line-height: 1.5;
     font-size: 14px; }
 
-@media (max-width: 640px) {
-  /* line 44, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+@media (max-width: 768px) {
+  /* line 45, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
   .headline {
     height: auto; }
-  /* line 47, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  /* line 48, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
   .headline-content {
     top: 0; }
-    /* line 49, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    /* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
     .headline-content:before {
       width: 200px; }
-    /* line 52, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    /* line 53, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
     .headline-content .title {
       font-size: 24px; }
-    /* line 55, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    /* line 56, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
     .headline-content .subtitle {
       font-size: 16px; }
-    /* line 58, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    /* line 59, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .intro {
+      padding: 0 10px;
+      text-align: justify; } }
+
+@media (max-width: 640px) {
+  /* line 67, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  .headline {
+    height: auto; }
+  /* line 70, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  .headline-content {
+    top: 0; }
+    /* line 72, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content:before {
+      width: 200px; }
+    /* line 75, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .title {
+      font-size: 24px; }
+    /* line 78, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .subtitle {
+      font-size: 16px; }
+    /* line 81, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
     .headline-content .intro {
       padding: 0 10px;
       text-align: justify; } }
@@ -393,9 +461,13 @@ footer {
 
 /* line 16, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-image {
-  float: right; }
+  float: right;
+  width: 550px; }
+  /* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-image img {
+    width: 100%; }
 
-/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 23, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-category {
   text-align: center;
   display: block;
@@ -403,7 +475,7 @@ footer {
   font-size: 14px;
   margin-top: 12px; }
 
-/* line 26, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 30, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-title {
   font-family: 'gotham_boldregular';
   color: #979fa4;
@@ -412,32 +484,14 @@ footer {
   line-height: 1.4;
   margin-bottom: 17px; }
 
-/* line 35, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 39, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-excerpt {
   color: #282930;
   font-family: Arial;
   font-size: 15px;
   line-height: 1.5; }
 
-/* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
-.button-cta {
-  border: 2px solid red;
-  border-radius: 3px;
-  color: #e21f25;
-  background: none;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-  font-size: 17px;
-  font-family: 'interstateregular'; }
-  /* line 54, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
-  .button-cta:hover {
-    background-color: #e21f25;
-    color: white;
-    opacity: .8; }
-
-/* line 60, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 48, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-cta {
   position: absolute;
   bottom: 0;
@@ -445,39 +499,170 @@ footer {
   width: 100%;
   text-align: center; }
 
-@media (max-width: 640px) {
-  /* line 69, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+@media (max-width: 1024px) {
+  /* line 57, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-image {
+    width: 500px; }
+    /* line 59, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+    .article-image img {
+      width: 100%; } }
+
+@media (max-width: 768px) {
+  /* line 66, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article {
     padding: 20px 0;
     height: auto; }
-  /* line 73, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  /* line 70, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article-info {
     float: none;
     width: 100%;
     height: auto;
     padding-bottom: 20px; }
-  /* line 79, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  /* line 76, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article-title {
     font-size: 27px;
     text-align: center; }
-  /* line 83, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  /* line 80, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article-excerpt {
     text-align: justify;
     padding: 0 10px; }
-  /* line 87, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  /* line 84, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article-cta {
     position: static;
     margin-top: 20px; }
-  /* line 92, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
-  .article-image img {
-    width: 100%; } }
-
-@media (max-width: 1024px) {
-  /* line 98, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  /* line 88, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
   .article-image {
-    width: 500px; }
-    /* line 100, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+    width: 100%; }
+    /* line 90, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
     .article-image img {
       width: 100%; } }
+
+@media (min-width: 1300px) {
+  /* line 97, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-image {
+    width: 620px; }
+    /* line 99, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+    .article-image img {
+      width: 100%; } }
+
+/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+.book-now {
+  position: absolute;
+  left: -29px;
+  top: 320px;
+  transform: rotate(-90deg);
+  transform-origin: top left; }
+
+/* line 8, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+.book-now-button {
+  background-color: black;
+  width: 40px;
+  padding: 13px;
+  color: white;
+  font-size: 13px;
+  font-family: "gotham_mediumregular", Arial, sans-serif;
+  text-decoration: none; }
+
+/* line 17, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+.book-now-form {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  width: 330px;
+  height: auto;
+  padding-top: 60px;
+  background-color: black;
+  color: #f1f2f2;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out; }
+  /* line 29, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form.open {
+    transform: translateX(0px); }
+  /* line 32, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form .close {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon-close.png) no-repeat center center;
+    position: absolute;
+    top: 31px;
+    left: 21px; }
+  /* line 41, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form form {
+    width: 230px;
+    margin: 0 auto; }
+  /* line 45, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding: 0; }
+  /* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form label {
+    font-size: 14px;
+    font-family: "gotham_mediumregular", Arial, sans-serif;
+    display: block;
+    margin-bottom: 12px; }
+  /* line 56, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form input {
+    height: 37px;
+    width: 223px;
+    background-color: white;
+    border: 1px solid #696969;
+    color: #a3aaae;
+    font-family: "interstateregular", Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 12px;
+    font-size: 14px; }
+  /* line 67, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form .selectric-wrapper {
+    width: 99px;
+    display: inline-block;
+    float: left;
+    font-family: "interstateregular", Arial, sans-serif; }
+    /* line 72, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+    .book-now-form .selectric-wrapper:last-child {
+      float: right; }
+    /* line 75, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+    .book-now-form .selectric-wrapper .selectric {
+      background-color: white; }
+      /* line 77, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+      .book-now-form .selectric-wrapper .selectric .label {
+        color: #a3aaae;
+        font-size: 14px; }
+      /* line 81, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+      .book-now-form .selectric-wrapper .selectric .button:after {
+        background: url(../images/icon-chevron-down.png);
+        width: 12px;
+        height: 7px;
+        border: none; }
+    /* line 88, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+    .book-now-form .selectric-wrapper .selectric-items li {
+      background-color: white; }
+  /* line 92, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form .legend {
+    font-family: "gotham_mediumregular", Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #979fa4; }
+  /* line 98, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form .btn-container {
+    text-align: center;
+    margin: 30px 0; }
+  /* line 102, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+  .book-now-form .link {
+    text-decoration: none;
+    color: #979fa4;
+    font-size: 14px;
+    font-family: "gotham_mediumregular", Arial, sans-serif; }
+
+/* line 110, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+.book-now-title {
+  text-align: center;
+  color: white; }
+
+/* line 114, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_book-now.scss */
+.date-input {
+  background: url(../images/icon-calendar.png) no-repeat center right 18px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@
     clear: both;
 }
 body{
-    background: url(../temp_images/LandingPage.jpg) no-repeat top center;
+    //background: url(../temp_images/LandingPage.jpg) no-repeat top center;
     color: black;
     background-color: $body-background-color;
     background-size: contain;
@@ -55,6 +55,46 @@ header{
     top: -47%;
 }
 
+.button-cta{
+    border: 2px solid red;
+    border-radius: 3px;
+    color: #e21f25;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'interstateregular';
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: #e21f25;
+        color: white;
+        opacity: .8;
+    }
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #676b67;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    &.open{
+        opacity: .75;
+        z-index: 998;
+    }
+}
+
+@media (max-width: 768px){
+    .banner{
+        height: $banner-height-tablet;
+    }
+}
 @media (min-width: 1680px){
     header{
         width: 64%;

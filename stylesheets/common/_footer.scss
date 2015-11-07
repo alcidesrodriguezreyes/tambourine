@@ -12,7 +12,7 @@ footer{
 .rights, .contact-info{
     display: inline-block;
     width: 50%;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'gotham_mediumregular';
 }
 .contact-info{
@@ -39,7 +39,6 @@ footer{
         text-align: center;
     }
 }
-
 @media (min-width: 768px) and (max-width: 1024px){
     footer{
         height: auto;
