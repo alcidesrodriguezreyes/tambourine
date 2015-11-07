@@ -38,3 +38,12 @@
 .slick-prev:before{
     
 }
+
+@media (max-width: 640px){
+    .banner-slider{
+        height: $banner-height-mobile;
+    }
+    .slider-item{
+        height: $banner-height-mobile;
+    }
+}

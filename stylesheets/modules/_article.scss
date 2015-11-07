@@ -1,14 +1,16 @@
-$article-height: 66px;
+$article-height: 491px;
+$article-padding-top: 66px;
 .article{
-    padding-top: $article-height;
+    padding-top: $article-padding-top;
     background-color: #f1f2f2;
+    height: $article-height;
 }
 
 
 .article-info{
     float: left;
     width: 400px;
-    height: $article-height;
+    height: $article-height - $article-padding-top - 58px;
     position: relative;
 }
 .article-image{
@@ -49,8 +51,46 @@ $article-height: 66px;
     display: inline-block;
     font-size: 17px;
     font-family: 'interstateregular';
+    &:hover{
+        background-color: #e21f25;
+        color: white;
+        opacity: .8;
+    }
 }
 .article-cta{
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 640px){
+    .article{
+        padding: 20px 0;
+        height: auto;
+    }
+    .article-info{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .article-title{
+        font-size: 27px;
+        text-align: center;
+    }
+    .article-excerpt{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .article-cta{
+        position: static;
+        margin-top: 20px;
+    }
+    .article-image{
+        img{
+            width: 100%;
+        }
+    }
 }

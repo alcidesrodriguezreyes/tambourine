@@ -1,5 +1,4 @@
 $body-background-color: black;
-
 $color: gray;
 
 $container-max-width: 1680px;
@@ -7,13 +6,21 @@ $wrapper-width: 80%;
 $wapper-width-large: 64%;
 
 
+//fonts
+$font-gotham-medium: 'gotham_mediumregular', Arial, sans-serif;
+$font-bodonix: 'bodonixtregular', Arial, sans-serif;
+$font-gotham-bold: 'gotham_mediumregular', Arial, sans-serif;
+$font-interstate: 'interstateregular', Arial, sans-serif;
+$font-interstate-light: 'interstatelightregular', Arial, sans-serif;
+
 //header
 $header-font-size: 11pt;
 $header-height: 104px;
-$header-font: 'gotham_mediumregular';
+$header-font: $font-gotham-medium;
 
 //banner
 $banner-height: 787px;
+$banner-height-mobile: 320px;
 
 //footer
 $footer-background-color: #f1f2f2;

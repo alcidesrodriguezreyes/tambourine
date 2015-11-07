@@ -46,6 +46,16 @@
     font-weight: normal;
     margin: 0 0 40px;
 }
-.article{
-    height: 491px;
+@media (max-width: 640px){
+    .events{
+        height: auto;
+        padding-top: 30px;
+    }
+    .events-title{
+        font-size: 15px;
+    }
+    .event-item{
+        margin: 10px;
+        width: 240px;
+    }
 }

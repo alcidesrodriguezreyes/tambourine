@@ -13,7 +13,6 @@ body{
     background: url(../temp_images/LandingPage.jpg) no-repeat top center;
     color: black;
     background-color: $body-background-color;
-    height: 1889px;
     background-size: contain;
 }
 .container{
@@ -25,7 +24,7 @@ body{
     margin: 0 auto;
 }
 .banner{
-    height: 787px;
+    height: $banner-height;
     position: relative;
 }
 //header
@@ -65,4 +64,29 @@ header{
         width: $wapper-width-large;
     }
 }
+
+@media (max-width: 640px){
+    header{
+        width: 100%;
+        left: 0;
+        background-color: transparent;
+    }
+    .banner{
+        height: $banner-height-mobile;
+    }
+    .city{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .logo-container{
+        width: 100%;
+        left: 0;
+    }
+    .logo{
+        width: 30%;
+    }
+}
+
 //end header

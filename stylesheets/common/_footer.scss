@@ -18,3 +18,24 @@ footer{
 .contact-info{
     text-align: right;
 }
+
+@media (max-width: 640px){
+    footer{
+        height: auto;
+        padding: 10px 0;
+    }
+    .copyrights{
+        padding: 0 10px;
+        height: auto;
+        line-height: 2;
+    }
+    .rights{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-info{
+        text-align: left;
+        width: 100%;
+        text-align: center;
+    }
+}

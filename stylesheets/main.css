@@ -52,25 +52,24 @@ body {
   background: url(../temp_images/LandingPage.jpg) no-repeat top center;
   color: black;
   background-color: black;
-  height: 1889px;
   background-size: contain; }
 
-/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 18, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .container {
   max-width: 1680px;
   margin: 0 auto; }
 
-/* line 23, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 22, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .wrapper {
   width: 80%;
   margin: 0 auto; }
 
-/* line 27, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 26, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .banner {
   height: 787px;
   position: relative; }
 
-/* line 32, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 31, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 header {
   background-color: white;
   height: 104px;
@@ -81,16 +80,16 @@ header {
   top: 94px;
   opacity: 0.9; }
 
-/* line 42, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 41, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .city {
   float: left;
   height: 100%;
   line-height: 104px;
   padding-left: 60px;
   font-size: 11pt;
-  font-family: "gotham_mediumregular"; }
+  font-family: "gotham_mediumregular", Arial, sans-serif; }
 
-/* line 51, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+/* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
 .logo-container {
   position: absolute;
   left: 40%;
@@ -99,13 +98,36 @@ header {
   top: -47%; }
 
 @media (min-width: 1680px) {
-  /* line 60, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 59, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   header {
     width: 64%;
     left: 18%; }
-  /* line 64, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  /* line 63, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
   .wrapper {
     width: 64%; } }
+
+@media (max-width: 640px) {
+  /* line 69, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  header {
+    width: 100%;
+    left: 0;
+    background-color: transparent; }
+  /* line 74, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .banner {
+    height: 320px; }
+  /* line 77, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .city {
+    display: none; }
+  /* line 80, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .wrapper {
+    width: 100%; }
+  /* line 83, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .logo-container {
+    width: 100%;
+    left: 0; }
+  /* line 87, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_common.scss */
+  .logo {
+    width: 30%; } }
 
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
 footer {
@@ -130,6 +152,26 @@ footer {
 /* line 18, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
 .contact-info {
   text-align: right; }
+
+@media (max-width: 640px) {
+  /* line 23, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  footer {
+    height: auto;
+    padding: 10px 0; }
+  /* line 27, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  .copyrights {
+    padding: 0 10px;
+    height: auto;
+    line-height: 2; }
+  /* line 32, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  .rights {
+    width: 100%;
+    text-align: center; }
+  /* line 36, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/common/_footer.scss */
+  .contact-info {
+    text-align: left;
+    width: 100%;
+    text-align: center; } }
 
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
 .banner-slider {
@@ -172,6 +214,14 @@ footer {
     height: 100%;
     display: block;
     background: url(../images/slider-arrows.png) no-repeat top right; }
+
+@media (max-width: 640px) {
+  /* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .banner-slider {
+    height: 320px; }
+  /* line 46, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_banner-slider.scss */
+  .slider-item {
+    height: 320px; } }
 
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
 .headline {
@@ -216,6 +266,27 @@ footer {
     margin: 40px 0;
     line-height: 1.5;
     font-size: 14px; }
+
+@media (max-width: 640px) {
+  /* line 44, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  .headline {
+    height: auto; }
+  /* line 47, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+  .headline-content {
+    top: 0; }
+    /* line 49, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content:before {
+      width: 200px; }
+    /* line 52, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .title {
+      font-size: 24px; }
+    /* line 55, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .subtitle {
+      font-size: 16px; }
+    /* line 58, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_headline.scss */
+    .headline-content .intro {
+      padding: 0 10px;
+      text-align: justify; } }
 
 /* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_events.scss */
 .events {
@@ -269,36 +340,110 @@ footer {
   font-weight: normal;
   margin: 0 0 40px; }
 
-/* line 49, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_events.scss */
+@media (max-width: 640px) {
+  /* line 50, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_events.scss */
+  .events {
+    height: auto;
+    padding-top: 30px; }
+  /* line 54, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_events.scss */
+  .events-title {
+    font-size: 15px; }
+  /* line 57, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_events.scss */
+  .event-item {
+    margin: 10px 0; } }
+
+/* line 3, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article {
+  padding-top: 66px;
+  background-color: #f1f2f2;
   height: 491px; }
 
-/* line 1, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 10, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-info {
   float: left;
-  width: 400px; }
+  width: 400px;
+  height: 367px;
+  position: relative; }
 
-/* line 5, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 16, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-image {
   float: right; }
 
-/* line 8, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-category {
   text-align: center;
-  display: block; }
+  display: block;
+  font-family: 'interstatelightregular';
+  font-size: 14px;
+  margin-top: 12px; }
 
-/* line 12, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 26, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-title {
   font-family: 'gotham_boldregular';
   color: #979fa4;
-  font-size: 38px;
-  font-weight: normal; }
+  font-size: 37px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 17px; }
 
-/* line 19, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+/* line 35, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
 .article-excerpt {
   color: #282930;
   font-family: Arial;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5; }
+
+/* line 43, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+.button-cta {
+  border: 2px solid red;
+  border-radius: 3px;
+  color: #e21f25;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'interstateregular'; }
+  /* line 54, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .button-cta:hover {
+    background-color: #e21f25;
+    color: white;
+    opacity: .8; }
+
+/* line 60, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+.article-cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+@media (max-width: 640px) {
+  /* line 69, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article {
+    padding: 20px 0;
+    height: auto; }
+  /* line 73, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-info {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px; }
+  /* line 79, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-title {
+    font-size: 27px;
+    text-align: center; }
+  /* line 83, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-excerpt {
+    text-align: justify;
+    padding: 0 10px; }
+  /* line 87, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-cta {
+    position: static;
+    margin-top: 20px; }
+  /* line 92, /Users/alcrodri/Downloads/tambourine/tambourine/stylesheets/modules/_article.scss */
+  .article-image img {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
