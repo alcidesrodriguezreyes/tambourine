@@ -94,3 +94,11 @@ $article-padding-top: 66px;
         }
     }
 }
+@media (max-width: 1024px){
+    .article-image{
+        width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+}

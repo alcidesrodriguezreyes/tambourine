@@ -89,4 +89,13 @@ header{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+    .logo-container{
+        width: 36%;
+        left: 32%;
+    }
+}
 //end header

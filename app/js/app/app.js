@@ -17,7 +17,7 @@
             breakpoint: 640
         },{
             breakpoint: 700,
-            settings: 'unslick'
+            //settings: 'unslick'
         },{
             breakpoint: 1024,
             settings: 'unslick'

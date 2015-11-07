@@ -111,6 +111,13 @@ header {
   .logo {
     width: 30%; } }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    width: 90%; }
+  .logo-container {
+    width: 36%;
+    left: 32%; } }
+
 footer {
   background-color: #f1f2f2;
   height: 43px; }
@@ -144,6 +151,18 @@ footer {
     text-align: center; }
   .contact-info {
     text-align: left;
+    width: 100%;
+    text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    height: auto; }
+  .copyrights {
+    height: auto; }
+  .rights {
+    width: 100%;
+    text-align: center; }
+  .contact-info {
     width: 100%;
     text-align: center; } }
 
@@ -374,3 +393,9 @@ footer {
     margin-top: 20px; }
   .article-image img {
     width: 100%; } }
+
+@media (max-width: 1024px) {
+  .article-image {
+    width: 500px; }
+    .article-image img {
+      width: 100%; } }

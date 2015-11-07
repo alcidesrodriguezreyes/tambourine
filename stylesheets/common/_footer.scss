@@ -39,3 +39,20 @@ footer{
         text-align: center;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    footer{
+        height: auto;
+    }
+    .copyrights{
+        height: auto;
+    }
+    .rights{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-info{
+        width: 100%;
+        text-align: center;
+    }
+}
